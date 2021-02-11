@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link href="IMAGENES/ICONO%20DE%20TI.ico" type="image/x-icon" rel="shortcut icon" />
+		<title>
+			IDENTIFICADORES, TIPOS DE DATOS, VARIABLES Y CONSTANTES EN C++
+		</title>
+		
+		<style type="text/css">
+			#imagen1
+			{
+				float:left;
+			}
+			#imagen2
+			{
+				float:right;
+			}
+		</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="Refresh" content="30"/>
+	</head>
+	
+	<body bgcolor="#FFCC99">
+		<img id="imagen1" src="IMAGENES/ESCUDO%20DE%20LA%20UNESUM.png" width=90 height=100 alt="Escudo de la Unesum"/>
+		<img id="imagen2" src="IMAGENES/ESCUDO%20DE%20TI.png" width=115 height=100 alt="Escudo de TI"/>
+		
+		<center>
+			<font color="#FF3366">
+				<h1> 
+					<b> TECNOLOGÍA DE LA INFORMACIÓN <br> IDENTIFICADORES </b>
+				</h1>
+			</font>	
+		</center>
+		
+		<font color="#000000" size="4">
+			<i> <b> <br> &emsp; &emsp; &emsp; DEFINICIÓN: </b>
+				<p align="justify"> Un identificador es el nombre que le damos a las variables y funciones, puede estar formado por una secuencia de letras y
+				dígitos del <b> 0</b> al <b> 9</b>, o que también acepta el caractér de subrayado. Un identificador no permite <b> "tilde ( ´ )"</b> ni <b> "eñe 
+				( ñ )"</b>. </p>
+				<p align="justify"> Un identificador debe de cumplir las siguientes condiciones: </p>
+				<ol>
+					<li> El primer caractér debe ser una letra o el caractér del subrayado <b> ( _ )</b>.
+					<li> Los caracteres significativos son los <b> 32</b> primeros del identificador.
+					<li> Se diferencian de las mayúsculas de la minúsculas.
+				</ol>
+			
+				<b> &emsp; &emsp; &emsp; EJEMPLO: <br> </b> 
+				<table border="6" align="center" width="25%" bgcolor="#FFFFFF"> 
+					<tr>
+						<th bgcolor="#FFCCCC"> Válidos </th>
+						<th bgcolor="#FFCCCC"> No válidos </th>
+					</tr>
+					<tr>
+						<td align="center"> _num </td>
+						<td align="center" bgcolor="#CCFFFF"> 1 not </td>
+					</tr>
+					<tr>
+						<td align="center"> nom </td>
+						<td align="center" bgcolor="#CCFFFF"> dirección </td>
+					</tr>
+					<tr>
+						<td align="center"> lug_nac </td>
+						<td align="center" bgcolor="#CCFFFF"> año_lec </td>
+					</tr>
+				</table>
+			</i>
+
+			<center>
+				<font color="#FF3366">
+					<h1> 
+						<b>  TIPOS DE DATOS <br> </b>
+					</h1>
+				</font>	
+			</center>
+			
+			<i> <b> &emsp; &emsp; &emsp; DEFINICIÓN: </b>
+				<p align="justify"> Los tipos de datos que se utilizan en <b> C++</b>: </p>
+				<table border="6" align="center" width="45%" bgcolor="#FFCCFF"> 
+					<tr>
+						<th bgcolor="#99CCFF" width="30%"> TIPO </th>
+						<th bgcolor="#99CCFF" width="27%"> TAMAÑO </th>
+						<th bgcolor="#99CCFF"> RANGO </th>
+					</tr>
+					
+					<tr>
+						<td colspan="3" bgcolor="#FFFF99"> <b> Enteros =></b> Sin decimales </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> int</b> </td>
+						<td align="center"> <b> 2</b> bytes </td>
+						<td align="center"> -32727 <b> a</b> 32727 </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> short</b> </td>
+						<td align="center"> <b> 2</b> bytes </td>
+						<td align="center"> -32727 <b> a</b> 32727 </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> long</b> </td>
+						<td align="center"> <b> 4</b> bytes </td>
+						<td align="center"> -2143,483648 <b> a</b> 2143'483.648 </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> unsigned</b> </td>
+						<td align="center"> <b> 2</b> bytes </td>
+						<td align="center"> 0 <b> a</b> 65535 </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> unsigned short</b> </td>
+						<td align="center"> <b> 2</b> bytes </td>
+						<td align="center"> 0 <b> a</b> 65535 </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> unsigned long</b> </td>
+						<td align="center"> <b> 4</b> bytes </td>
+						<td align="center"> 0 <b> a</b> 4.294'967.295 </td>
+					</tr>
+					
+					<tr>
+						<td colspan="3" bgcolor="#FFFF99"> <b> Reales =></b> Con decimales </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> float</b> </td>
+						<td align="center"> <b> 4</b> bytes </td>
+						<td align="center"> 3,4 <b> E</b> -38 <b> a</b> 3,4 <b> E</b> 38 </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> double</b> </td>
+						<td align="center"> <b> 8</b> bytes </td>
+						<td align="center"> 1,7 <b> E</b> -307 <b> a</b> 1,7 <b> E</b> 307 </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> long double</b> </td>
+						<td align="center"> <b> 10</b> bytes </td>
+						<td align="center"> 3,4 <b> E</b> -4932 <b> a</b> 3,4 <b> E</b> 4932 </td>
+					</tr>
+					
+					<tr>
+						<td colspan="3" bgcolor="#FFFF99"> <b> Caractér </b> </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> char</b> </td>
+						<td align="center"> <b> 1</b> byte </td>
+						<td align="center"> -128 <b> a</b> 127 </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> unsigned char</b> </td>
+						<td align="center"> <b> 1</b> byte </td>
+						<td align="center"> 0 <b> a</b> 256 </td>
+					</tr>
+				</table>
+			</i>
+			
+			<center>
+				<font color="#FF3366">
+					<h1> 
+						<b>  VARIABLES <br> </b>
+					</h1>
+				</font>	
+			</center>
+			
+			<i> <b> <br> &emsp; &emsp; &emsp; DEFINICIÓN: </b>
+				<p align="justify"> Las variables se utilizan para almacenar valores que pueden modificarse durante la ejecución de un programa. Antes de
+				declarar una variables en primer lugar debe plantearse que tipo de datos quiere almacenarse. <b> Ejm.:</b> </p>
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <b> float</b> precio; <br>
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <b> int</b> n, a, z; <br>
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <b> char</b> *nom, *ape, *dir; <br>
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <b> char</b> nom[20], ape[20], dir[20]; <br>
+				<b> <br> &emsp; &emsp; &emsp; CLASIFICACIÓN: </b>
+				<p align="justify"> <b> VARIABLES LOCALES:</b> Se declaran después de la función <b> main()</b> o en cualquier otra función en la que será
+				utilizada.</p>
+				<p align="justify"> <b> VARIABLES GLOBALES:</b> Se declaran antes de la función <b> main()</b>, se pueden usar en cualquier parte del programa
+				y se destruye al utilizar esto.</p>	
+			</i>
+			<center>
+				<img border="1" src="IMAGENES/VARIABLES%20LOCALES%20Y%20GLOBALES.png" width=230 height=250 alt="Variable local y global"/>
+			</center>
+			
+			<center>
+				<font color="#FF3366">
+					<h1> 
+						<b>  CONSTANTES <br> </b>
+					</h1>
+				</font>	
+			</center>
+			
+			<i> <b> <br> &emsp; &emsp; &emsp; DEFINICIÓN: </b>
+				<p align="justify"> Al contrario de las variables, las constantes son aquellos datos que mantienen su valor a lo largo de la ejecución de un
+				programa. Para definir una constante con nombre utilice la directiva <b> "#define"</b>. </p>
+			</i>
+			<center>
+				<img border="1" src="IMAGENES/CONSTANTE.png" alt="Constantes"/>
+			</center>
+		</font>	
+	</body>
+	<br>
+	<a href="SEC_ESCA,%20MOD,%20OPERA%20Y%20LIB.html"> <img id="imagen2" src="IMAGENES/FLECHA%20SIGUIENTE.png" width=110 height=70 alt="Siguiente"/> </a>
+	<a href="HISTORIA%20C++.html"> <img id="imagen1" src="IMAGENES/FLECHA%20ANTERIOR.png" width=110 height=70 alt="Anterior"/> </a>	
+</html>

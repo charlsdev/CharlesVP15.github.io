@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link href="IMAGENES/ICONO%20DE%20TI.ico" type="image/x-icon" rel="shortcut icon" />
+		<title>
+			SECUENCIAS DE ESCAPE, MODIFICADORES, OPERADORES BÁSICOS Y LIBRERÍAS EN C++
+		</title>
+		
+		<style type="text/css">
+			#imagen1
+			{
+				float:left;
+			}
+			#imagen2
+			{
+				float:right;
+			}
+		</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="Refresh" content="30"/>
+	</head>
+	
+	<body bgcolor="#CCFFCC">
+		<img id="imagen1" src="IMAGENES/ESCUDO%20DE%20LA%20UNESUM.png" width=90 height=100 alt="Escudo de la Unesum"/>
+		<img id="imagen2" src="IMAGENES/ESCUDO%20DE%20TI.png" width=115 height=100 alt="Escudo de TI"/>
+		
+		<center>
+			<font color="#FF3366">
+				<h1> 
+					<b> TECNOLOGÍA DE LA INFORMACIÓN <br> SECUENCIAS DE ESCAPE </b>
+				</h1>
+			</font>	
+		</center>
+		
+		<font color="#000000" size="4">
+			<i> <b> <br> &emsp; &emsp; &emsp; DEFINICIÓN: </b>
+				<p align="justify"> Ciertos caracteres no representados graficamente se pueden representar mediante lo que se conoce como secuencia de 
+				escape. </p>
+				<p align="justify"> He aquí una tabla de las mas significantes: </p>
+				<table border="6" align="center" width="40%" bgcolor="#00CCCC">
+					<tr>
+						<td align="center" width="30%" style="font-size:120%;"> <b> \n </b> </td>
+						<td align="center" bgcolor="#00FF99"> Salto de línea </td>
+					</tr>
+					<tr>
+						<td align="center" width="30%" style="font-size:120%;"> <b> \b </b> </td>
+						<td align="center" bgcolor="#00FF99"> Retroceso </td>
+					</tr>
+					<tr>
+						<td align="center" width="30%" style="font-size:120%;"> <b> \t </b> </td>
+						<td align="center" bgcolor="#00FF99"> Tabulación horizontal </td>
+					</tr>
+					<tr>
+						<td align="center" width="30%" style="font-size:120%;"> <b> \v </b> </td>
+						<td align="center" bgcolor="#00FF99"> Tabulación vertical </td>
+					</tr>
+					<tr>
+						<td align="center" width="30%" style="font-size:120%;"> <b> \\ </b> </td>
+						<td align="center" bgcolor="#00FF99"> Contra barra </td>
+					</tr>
+					<tr>
+						<td align="center" width="30%" style="font-size:120%;"> <b> \f </b> </td>
+						<td align="center" bgcolor="#00FF99"> Salto de página </td>
+					</tr>
+					<tr>
+						<td align="center" width="30%" style="font-size:120%;"> <b> \' </b> </td>
+						<td align="center" bgcolor="#00FF99"> Comilla simple </td>
+					</tr>
+					<tr>
+						<td align="center" width="30%" style="font-size:120%;"> <b> \" </b> </td>
+						<td align="center" bgcolor="#00FF99"> Comillas dobles </td>
+					</tr>
+					<tr>
+						<td align="center" width="30%" style="font-size:120%;"> <b> \0 </b> </td>
+						<td align="center" bgcolor="#00FF99"> Fin de una cadena de caracteres </td>
+					</tr>
+				</table>
+			</i>
+			
+			<center>
+				<font color="#FF3366">
+					<h1> 
+						<b> MODIFICADORES <br> </b>
+					</h1>
+				</font>	
+			</center>
+
+			<i> <p align="justify"> Los modificadores más significantes en C++ son: </p>
+				<table border="6" align="center" width="50%" bgcolor="#33FFCC">
+					<tr>
+						<td align="center" width="25%" style="font-size:110%;"> <b> %c </b> </td>
+						<td align="center" bgcolor="#FFFF99"> Un único caractér </td>
+					</tr>
+					<tr>
+						<td align="center" style="font-size:110%;"> <b> %d </b> </td>
+						<td align="center" bgcolor="#FFFF99"> Un entero con signo en base decimal </td>
+					</tr>
+					<tr>
+						<td align="center" style="font-size:110%;"> <b> %ld </b> </td>
+						<td align="center" bgcolor="#FFFF99"> Un entero largo </td>
+					</tr>
+					<tr>
+						<td align="center" style="font-size:110%;"> <b> %u </b> </td>
+						<td align="center" bgcolor="#FFFF99"> Un entero sin signo en base decimal </td>
+					</tr>
+					<tr>
+						<td align="center" style="font-size:110%;"> <b> %o </b> </td>
+						<td align="center" bgcolor="#FFFF99"> Un entero en base octal </td>
+					</tr>
+					<tr>
+						<td align="center" style="font-size:110%;"> <b> %x </b> </td>
+						<td align="center" bgcolor="#FFFF99"> Un entero en base decimal </td>
+					</tr>
+					<tr>
+						<td align="center" style="font-size:110%;"> <b> %e </b> </td>
+						<td align="center" bgcolor="#FFFF99"> Un número real en coma flotante, con exponente </td>
+					</tr>
+					<tr>
+						<td align="center" style="font-size:110%;"> <b> %f </b> </td>
+						<td align="center" bgcolor="#FFFF99"> Un número real en coma flotante, sin exponente </td>
+					</tr>
+					<tr>
+						<td align="center" style="font-size:110%;"> <b> %s </b> </td>
+						<td align="center" bgcolor="#FFFF99"> Una cadena de caracteres </td>
+					</tr>
+					<tr>
+						<td align="center" style="font-size:110%;"> <b> %p </b> </td>
+						<td align="center" bgcolor="#FFFF99"> Un puntero o dirección de memoria </td>
+					</tr>
+				</table>
+			</i>
+			
+			<center>
+				<font color="#FF3366">
+					<h1> 
+						<b> OPERADORES BÁSICOS <br> </b>
+					</h1>
+				</font>	
+			</center>
+			
+			<i> <p align="justify"> Los operadores básicos en C++ se clasifican en: </p>
+				<p align="justify"> <b> &emsp; OPERADORES ARITMÉTICOS </b> </p>
+				<table border="6" align="center" width="30%" bgcolor="#FFCCCC">
+					<tr>
+						<th bgcolor="#AAAAFF"> OPERADOR </th>
+						<th bgcolor="#AAFFAA"> OPERACIÓN </th>
+					</tr>
+					<tr>
+						<td align="center"> <b> + </b> </td>
+						<td align="center"> Suma </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> - </b> </td>
+						<td align="center"> Resta </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> * </b> </td>
+						<td align="center"> Multiplicación </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> / </b> </td>
+						<td align="center"> División </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> % </b> </td>
+						<td align="center"> Residuo </td>
+					</tr>
+				</table>
+				
+				<p align="justify"> <b> &emsp; OPERADORES RELACIONALES </b> </p>
+				<table border="6" align="center" width="30%" bgcolor="#FFCCCC">
+					<tr>
+						<th bgcolor="#AAAAFF"> OPERADOR </th>
+						<th bgcolor="#AAFFAA"> OPERACIÓN </th>
+					</tr>
+					<tr>
+						<td align="center"> <b> > </b> </td>
+						<td align="center"> Mayor que </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> < </b> </td>
+						<td align="center"> Menor que </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> >= </b> </td>
+						<td align="center"> Mayor o igual </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> <= </b> </td>
+						<td align="center"> Menor o igual </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> != </b> </td>
+						<td align="center"> Diferente </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> == </b> </td>
+						<td align="center"> Igual </td>
+					</tr>
+				</table>
+				
+				<p align="justify"> <b> &emsp; OPERADORES LÓGICOS </b> </p>
+				<table border="6" align="center" width="30%" bgcolor="#FFCCCC">
+					<tr>
+						<th bgcolor="#AAAAFF"> OPERADOR </th>
+						<th bgcolor="#AAFFAA"> OPERACIÓN </th>
+					</tr>
+					<tr>
+						<td align="center"> <b> && </b> </td>
+						<td align="center"> And </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> || </b> </td>
+						<td align="center"> Or </td>
+					</tr>
+					<tr>
+						<td align="center"> <b> ! </b> </td>
+						<td align="center"> Not </td>
+					</tr>
+				</table>
+				
+				<p align="justify"> <b> &emsp; OPERADORES DE ASIGNACIÓN </b> </p>
+				<table border="6" align="center" width="30%" bgcolor="#FFCCCC">
+					<tr>
+						<th bgcolor="#AAAAFF"> SIMPLE </th>
+						<td colspan="2" align="center" width="40%"> <b> = </b> </td>
+					</tr>
+					<tr>
+						<th bgcolor="#AAFFAA"> COMPUESTO </th>
+						<td align="center"> <b> += </b> </td>
+						<td align="center"> <b> -= </b> </td>
+					</tr>
+					<tr>
+						<td align="center">  </td>
+						<td align="center"> <b> *= </b> </td>
+						<td align="center"> <b> /= </b> </td>
+					</tr>
+				</table>
+				<p align="justify"> <b> &emsp; &emsp; &emsp; &emsp; &emsp; Ejemplo: </b> </p>
+				<p align="justify"> <b> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Asignación &emsp; &emsp; ==> </b> &emsp; &emsp; p = n; <br>
+				<b> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Comparación &ensp; &ensp; ==> </b> &emsp; &emsp; if(ed == 65); </p>
+			</i>
+		</font>
+	</body>
+	<br>
+	<a href="SETENCIAS%20DE%20CONTROL.html"> <img id="imagen2" src="IMAGENES/FLECHA%20SIGUIENTE.png" width=110 height=70 alt="Siguiente"/> </a>
+	<a href="IDE,%20TIP_DATOS,%20VAR%20Y%20CONS.html"> <img id="imagen1" src="IMAGENES/FLECHA%20ANTERIOR.png" width=110 height=70 alt="Anterior"/> </a>	
+</html>	
